@@ -4,8 +4,12 @@
     padding: 0;
 }
 
+body{
+    overflow: hidden;
+}
+
 .hide{
-    opacity: 0;
+    opacity: 0 !important;
 }
 
 .pointer{
@@ -16,6 +20,7 @@
     height: 80px;
     transform: translate(-50%, -50%);
     border-radius: 100%;
+    transition: opacity 500ms ease;
     animation-name: wave;
     animation-duration: 1s;
     animation-iteration-count: infinite;
